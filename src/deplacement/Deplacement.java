@@ -17,17 +17,18 @@ interface Deplacement {   // Implicitement abstract comme une classe 100% abstra
 		return (origine + destination);
 	}
 
-    default int deplacerEnY(int origine, int destination) { // axe ordonnée seulement
+     @SuppressWarnings("unused")
+	private int deplacerEnY(int origine, int destination) { // axe ordonnée seulement
 		
 		return (origine + destination);
 	}
 	
-	default void seDeplace() { // A être overiding dans les classes filles
-        Logger logger = Logger.getLogger(Deplacement.class.getName());
-		logger.log(Level.INFO, "** Objet générique se déplace en 2 dimensions");
+	default void seDeplace(int origine, int destination) { // A être overiding dans les classes filles
+		System.out.println("** Objet générique se déplace en 2 dimensions");
 		
 		// Devra appeler deplacerEnX() ou deplacerEnY() ou les deux selons l'objet
 		
 	}
+
 }
 

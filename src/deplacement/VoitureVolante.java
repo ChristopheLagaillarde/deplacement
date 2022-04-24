@@ -5,10 +5,18 @@ package deplacement;
  * @author Lagaillarde
  *
  */
-public class VoitureVolante extends MoyenDeTransport implements Deplacement{
+public class VoitureVolante extends Voiture implements Deplacement{
 
 	VoitureVolante(String type, int x, int y, int vitesse) {
 		super(type, x, y, vitesse);
+	}
+	
+	void afficher() {
+		System.out.println("Position avec Voiture volante");
+		System.out.println("la position du héro pour x est " + this.x);
+		System.out.println("la position du héro pour y est " + this.y);
+		System.out.println("\n");
+
 	}
 
 	@Override
@@ -28,5 +36,15 @@ public class VoitureVolante extends MoyenDeTransport implements Deplacement{
 		}
 		
 		return vitesse;
+	}
+	
+	private int deplacerEnY(int origine, int destination) {
+		return (origine + destination);
+	}
+	
+	@Override
+	public void seDeplace(int origine, int destination) {
+		this.x = super.deplacerEnX(origine,destination);
+		this.y = deplacerEnY(origine,destination);
 	}
 }

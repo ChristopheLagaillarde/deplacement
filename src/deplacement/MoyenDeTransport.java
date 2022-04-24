@@ -1,8 +1,5 @@
 package deplacement;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  * classe MERE
  * La classe moyen de transport est une classe générique abstraite qui nommera
@@ -48,10 +45,8 @@ public abstract class MoyenDeTransport {
 	 * Affiche la position sur l'axe x et/ou y de l'objet  
 	 */
 	void afficher() {
-        Logger logger = Logger.getLogger(MoyenDeTransport.class.getName());
-		logger.log(Level.INFO,() ->String.format("la position du héro pour x est %i", this.x));
-		logger.log(Level.INFO,() ->String.format("la position du héro pour y est %i", this.y));
-
+		System.out.println("la position du héro pour x est " + this.x);
+		System.out.println("la position du héro pour y est " + this.y);
 	}
 	
 	String getType() {
