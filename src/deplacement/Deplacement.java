@@ -1,9 +1,5 @@
 package deplacement;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-
 /**
  * L'interface va définir uniquement les comportements génériques possibles des classes Filles
  * Seul le programmeur va définir pour une classe fille donnée la manière dont les déplacements

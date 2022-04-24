@@ -11,6 +11,7 @@ public class Ascenseur extends MoyenDeTransport implements Deplacement{
 		super(type, x, y, vitesse);
 	}
 	
+	@Override
 	void afficher() {
 		System.out.println("Position avec Ascenseur");
 		super.afficher();

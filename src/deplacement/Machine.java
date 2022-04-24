@@ -11,6 +11,7 @@ public class Machine extends MoyenDeTransport implements Deplacement{
 		super("Machine Générique", 0, 0, 0);
 	}
 	
+	@Override
 	void afficher() {
 		System.out.println("Position avec Machine");
 		super.afficher();

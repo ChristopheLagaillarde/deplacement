@@ -6,6 +6,7 @@ package deplacement;
 		super(type, x, y, vitesse);
 	}
 	
+	@Override
 	void afficher() {
 		System.out.println("Position avec Voiture");
 		super.afficher();

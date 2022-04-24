@@ -9,6 +9,7 @@ public class SousMarin extends MoyenDeTransport implements Deplacement{
 		this.z = z;
 	}
 	
+	@Override
 	void afficher() {
 		System.out.println("Position avec Sousmarin");
 		super.afficher();

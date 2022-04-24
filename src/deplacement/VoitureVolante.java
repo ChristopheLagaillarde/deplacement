@@ -11,6 +11,7 @@ public class VoitureVolante extends Voiture implements Deplacement{
 		super(type, x, y, vitesse);
 	}
 	
+	@Override
 	void afficher() {
 		System.out.println("Position avec Voiture volante");
 		System.out.println("la position du héro pour x est " + this.x);
