@@ -1,5 +1,9 @@
 package deplacement;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 /**
  * L'interface va définir uniquement les comportements génériques possibles des classes Filles
  * Seul le programmeur va définir pour une classe fille donnée la manière dont les déplacements
@@ -19,8 +23,8 @@ interface Deplacement {   // Implicitement abstract comme une classe 100% abstra
 	};
 	
 	default void seDeplace() { // A être overiding dans les classes filles
-		
-		System.out.println("** Objet générique se déplace en 2 dimensions");
+        Logger logger = Logger.getLogger(Deplacement.class.getName());;
+		logger.log(Level.INFO, "** Objet générique se déplace en 2 dimensions");
 		
 		// Devra appeler deplacerEnX() ou deplacerEnY() ou les deux selons l'objet
 		
