@@ -48,7 +48,7 @@ public abstract class MoyenDeTransport {
 	 * Affiche la position sur l'axe x et/ou y de l'objet  
 	 */
 	void afficher() {
-        Logger logger = Logger.getLogger(MoyenDeTransport.class.getName());;
+        Logger logger = Logger.getLogger(MoyenDeTransport.class.getName());
 		logger.log(Level.INFO,"la position du héro pour x est " + this.x);
 		logger.log(Level.INFO,"la position du héro pour y est " + this.y);
 
