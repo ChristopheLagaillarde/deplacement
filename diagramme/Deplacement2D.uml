@@ -80,7 +80,7 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_QpARELwMEeyVPsDRAk3G8g" name="vitesse" visibility="protected">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_VzYEMLwMEeyVPsDRAk3G8g" name="MoyenDeTransport" visibility="public">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VzYEMLwMEeyVPsDRAk3G8g" name="r" visibility="public">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_dZ8M8LwMEeyVPsDRAk3G8g" name="typeTransport">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
@@ -132,14 +132,34 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_FjQNMLwjEeyis_I_OxCpUg" name="Implements" client="_BfuGULwjEeyis_I_OxCpUg" supplier="_QxY_wLwGEeyVPsDRAk3G8g"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_2FezcLwpEeyis_I_OxCpUg" name="VoitureVolante">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_69x_IrwpEeyis_I_OxCpUg" name="moyendetransport" type="_UEYagLwGEeyVPsDRAk3G8g" association="_69xYELwpEeyis_I_OxCpUg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_69ymMLwpEeyis_I_OxCpUg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_69ymMbwpEeyis_I_OxCpUg" value="1"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zDOPAMQOEeyRm-3oXuloHg" name="voiture" type="_OjPtMLwGEeyVPsDRAk3G8g" association="_zDKkoMQOEeyRm-3oXuloHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zDQEMMQOEeyRm-3oXuloHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zDQEMcQOEeyRm-3oXuloHg" value="1"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_AJU28LwqEeyis_I_OxCpUg" name="VoitureVolante"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_FES8ILwqEeyis_I_OxCpUg" name="seDeplace"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_7-nxELwpEeyis_I_OxCpUg" name="Implements" client="_2FezcLwpEeyis_I_OxCpUg" supplier="_QxY_wLwGEeyVPsDRAk3G8g"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7svpkMQOEeyRm-3oXuloHg" name="SousMarin">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IdbGwsQPEeyRm-3oXuloHg" name="moyendetransport" type="_UEYagLwGEeyVPsDRAk3G8g" association="_IdafsMQPEeyRm-3oXuloHg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IdbGw8QPEeyRm-3oXuloHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Idbt0MQPEeyRm-3oXuloHg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LuyJ0MQPEeyRm-3oXuloHg" name="z" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__Zx8AMQOEeyRm-3oXuloHg" name="SousMarin"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BY6iMMQPEeyRm-3oXuloHg" name="seDeplace">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_sntusMQPEeyRm-3oXuloHg" name="origine">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_0yL1wMQPEeyRm-3oXuloHg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3H03cMQPEeyRm-3oXuloHg" name="afficher"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_GaN44MQPEeyRm-3oXuloHg" name="Implements" client="_7svpkMQOEeyRm-3oXuloHg" supplier="_QxY_wLwGEeyVPsDRAk3G8g"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_E6-ggLwIEeyVPsDRAk3G8g" memberEnd="_E6_HkbwIEeyVPsDRAk3G8g _E6_HlLwIEeyVPsDRAk3G8g">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E6-ggbwIEeyVPsDRAk3G8g" source="org.eclipse.papyrus">
@@ -159,10 +179,16 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_IZy8gbwjEeyis_I_OxCpUg" name="machine" type="_BfuGULwjEeyis_I_OxCpUg" association="_IZpykLwjEeyis_I_OxCpUg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_69xYELwpEeyis_I_OxCpUg" memberEnd="_69x_IrwpEeyis_I_OxCpUg _69ymMrwpEeyis_I_OxCpUg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_69x_ILwpEeyis_I_OxCpUg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_69x_IbwpEeyis_I_OxCpUg" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zDKkoMQOEeyRm-3oXuloHg" memberEnd="_zDOPAMQOEeyRm-3oXuloHg _zDQEMsQOEeyRm-3oXuloHg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zDNA4MQOEeyRm-3oXuloHg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zDNA4cQOEeyRm-3oXuloHg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_69ymMrwpEeyis_I_OxCpUg" name="voiturevolante" type="_2FezcLwpEeyis_I_OxCpUg" association="_69xYELwpEeyis_I_OxCpUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zDQEMsQOEeyRm-3oXuloHg" name="voiturevolante" type="_2FezcLwpEeyis_I_OxCpUg" association="_zDKkoMQOEeyRm-3oXuloHg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IdafsMQPEeyRm-3oXuloHg" memberEnd="_IdbGwsQPEeyRm-3oXuloHg _Idbt0cQPEeyRm-3oXuloHg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IdbGwMQPEeyRm-3oXuloHg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IdbGwcQPEeyRm-3oXuloHg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Idbt0cQPEeyRm-3oXuloHg" name="sousmarin" type="_7svpkMQOEeyRm-3oXuloHg" association="_IdafsMQPEeyRm-3oXuloHg"/>
   </packagedElement>
 </uml:Model>
