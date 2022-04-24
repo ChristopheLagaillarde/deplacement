@@ -1,8 +1,5 @@
 package deplacement;
 
-import deplacement.Deplacement;
-import deplacement.MoyenDeTransport;
-
 /**
  * La classe machine est un moyen de transport générique
  * @author Lagaillarde

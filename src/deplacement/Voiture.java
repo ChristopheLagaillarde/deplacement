@@ -1,8 +1,5 @@
 package deplacement;
 
-import deplacement.Deplacement;
-import deplacement.MoyenDeTransport;
-
 public class Voiture extends MoyenDeTransport implements Deplacement{
 
 	Voiture(String type, int x, int y, int vitesse) {

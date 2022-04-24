@@ -1,8 +1,5 @@
 package deplacement;
 
-import deplacement.Deplacement;
-import deplacement.MoyenDeTransport;
-
 /**
  * La classe VoitureVolante peut se déplacer à la fois sur l'axe x et y
  * @author Lagaillarde

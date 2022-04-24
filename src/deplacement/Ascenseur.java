@@ -1,8 +1,5 @@
 package deplacement;
 
-import deplacement.Deplacement;
-import deplacement.MoyenDeTransport;
-
 /**
  * La classe Ascenseur ne peut se déplacer que sur l'axe y
  * @author Lagaillarde
