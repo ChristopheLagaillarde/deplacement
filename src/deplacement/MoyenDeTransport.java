@@ -49,8 +49,8 @@ public abstract class MoyenDeTransport {
 	 */
 	void afficher() {
         Logger logger = Logger.getLogger(MoyenDeTransport.class.getName());
-		logger.log(Level.INFO,"la position du héro pour x est " + this.x);
-		logger.log(Level.INFO,"la position du héro pour y est " + this.y);
+		logger.log(Level.INFO,"la position du héro pour x est %i", this.x);
+		logger.log(Level.INFO,"la position du héro pour y est %i", this.y);
 
 	}
 	
